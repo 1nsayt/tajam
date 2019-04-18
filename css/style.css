@@ -1,4 +1,4 @@
-/* base settings*/
+/* base settings ---------------------------------------------------------------------*/
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -9,38 +9,64 @@ body {
     box-sizing: border-box;
 }
 
+.link {
+    text-decoration: none;
+    
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0;
+ }
+ .line {
+     list-style: none;   
+ }
+ 
+ .btn {
+     color: #00e0d0;
+     display: inline-block;
+     border: solid #00e0d0 2px;
+     font-family: 'Hammersmith One', sans-serif;;
+     text-transform: uppercase;
+     padding: 10px 15px;
+     vertical-align: top;
+ }
+ 
+ ul {
+     padding-left: 0;
+ }
+
+ .header-flow {
+    text-align: center;
+    margin: 70px;
+    font-family: 'Playfair Display', serif;
+ }
+ .header-flow-title {
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.header-flow-suptitle {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
 /* scope */
+
 .container {
     width: 100%;
     max-width: 940px;
     margin: 0 auto;   
 }
 
-.link {
-   text-decoration: none;
-   
-}
 
-.line {
-    list-style: none;   
-}
 
-.btn {
-    color: #00e0d0;
-    display: inline-block;
-    border: solid #00e0d0 2px;
-    font-family: 'Hammersmith One', sans-serif;;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    vertical-align: top;
-}
+/* end base settings --------------------------------------------------------------------- */
 
-ul {
-    padding-left: 0;
-}
+/* main-window ---------------------------------------------------------------------*/
 
-/* main-title */
-.main-title{
+.main-window{
     height: 100vh;
     max-height: 670px;
     display: flex;
@@ -56,6 +82,7 @@ ul {
 }
 
 /* header */
+
 .header {
     padding-top: 15px;
     display: flex;
@@ -64,6 +91,7 @@ ul {
 }
 
 /* header-logo */
+
 .logo {
     display: flex;
     align-items: center;
@@ -146,11 +174,17 @@ ul {
 .slider:hover {
     cursor: pointer;
 }
+
 .slider-link:hover {
     background-color: #00e0d0;
 }
 
-/* our-story */
+/* end main-window  ---------------------------------------------------------------------*/
+
+
+
+/* our-story --------------------------------------------------------------------- */
+
 .our-story {
     padding: 70px 0 70px 60px;
     display: flex;
@@ -175,6 +209,7 @@ ul {
 }
 
 /* video-our-story */
+
 .watch-our-story_them {
     width: 100%;
     height: 100vh;
@@ -182,6 +217,7 @@ ul {
     background: url(../images/city.jpg) no-repeat center;
     background-size: cover;
 }
+
 .watch-our-story__content {
     height: 100%;
     min-height: 550px;
@@ -211,9 +247,11 @@ ul {
     position: relative;
     transition: border .2s linear;
 }
+
 .btn-play__link:hover {
     border-color: transparent transparent transparent #00e0d0;
 }
+
 .btn-play__link:before {
     content: '';
     display: block;
@@ -226,31 +264,27 @@ ul {
     top: -45px;
 }
 
-/* expertise */
+/* end our-story  --------------------------------------------------------------------- */
+
+
+
+/* expertise --------------------------------------------------------------------- */
 
 /* header */
+
 .expertise__them {
        height: 100vh;
        max-height: 755px;
 }
 
-.expertise__header {
-    text-align: center;
-    margin: 70px;
-    font-family: 'Playfair Display', serif;
-}
 .expertise__title {
-    font-size: 1.375rem;
     color: #5a5763;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 15px;
 }
+
 .expertise__suptitle {
-    font-size: 0.875rem;
-    font-weight: 400;
     color: #8d8c90;
 }
+
 .expertise__suptitle:after {
     content: '';
     display: block;
@@ -277,8 +311,6 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
-    
 }
 
 .item__title {
@@ -287,13 +319,75 @@ ul {
     color: #413d4b;
     text-transform: uppercase;
 }
+
 .item__text {
     color: #7a7a7a;
     font-size: 0.875rem;
     text-align: center;
 }
 
+/* end expertise ---------------------------------------------------------------------*/
 
+/* our team */
 
+.our-team_them {
+    width: 100%;
+    height: 100vh;
+    max-height: 710px;
+    background: url(../images/forest.jpg) center no-repeat;
+    background-size: cover;
+}
 
+.our-team__content {
+    color: white;
+    padding: 70px 0 65px 0;
+}
+
+/* header */
+.our-team__header {
+    margin: 0;
+}
+
+.our-team__header:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #c6c4c9;
+    margin-top: 20px;
+}
+
+/* content */
+
+.our-team__bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.person {
+    width: 220px;
+    height: 310px;
+    border: solid 1px #76758a;
+}
+
+.photo {
+    height: 230px;
+    background-color: #fff;
+}
+
+.person-name {
+    font-size: 0.875rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 24px 0 10px 0;
+}
+
+.person-position {
+    display: inline-block;
+    font-weight: 300; 
+}
 
