@@ -273,8 +273,8 @@ body {
 /* header */
 
 .expertise__them {
-       height: 100vh;
-       max-height: 755px;
+    height: 100vh;
+    max-height: 755px;
 }
 
 .expertise__title {
@@ -318,6 +318,7 @@ body {
     font-weight: 900;
     color: #413d4b;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .item__text {
@@ -340,7 +341,8 @@ body {
 
 .our-team__content {
     color: white;
-    padding: 70px 0 65px 0;
+    padding: 50px 0 30px 0;
+    text-align: center;
 }
 
 /* header */
@@ -364,7 +366,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
     margin-top: 45px;
 }
 
@@ -389,5 +390,48 @@ body {
 .person-position {
     display: inline-block;
     font-weight: 300; 
+}
+
+.suptitle__hiring {
+    display: block;
+    margin: 40px 0 10px 0;
+}
+
+/* quote */
+.quote-them {
+    height: 100vh;
+    width: 100%;
+    max-height: 500px;
+    background: url(../images/forest2.jpg)  center no-repeat;
+    background-size: cover;
+}
+
+.quote__content {
+    padding: 0 80px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 250px;
+}
+
+.quote-text {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-weight: 300;  
+}
+
+.quote-name {
+    display: block;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.quote-position {
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    font-weight: 300;
 }
 
